@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function HelloWorld({name}){
+  return(
+    <main>
+      <div className="card">
+        <img 
+          className="header-img"
+          src="/images/summer.jpeg" 
+          alt="" 
+        />
+        <p className="tag">Learning</p>
+        <p>Published 21 Dec 2013</p>
+        <h1>HTML and CSS Foundations</h1>
+        <p className="content">These languages are the backbone of every website, defining content, structure, and presentation</p>
+
+        <div className="profile">
+          <img className= "profileTag" src="/images/man.jpeg" alt="" />
+          <p>{name}</p>
+        </div>
+      </div>
+    </main>
+  )
 }
 
-export default App;
+export default HelloWorld;
